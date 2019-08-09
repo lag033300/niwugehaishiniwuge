@@ -1,0 +1,100 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    position: relative;
+    animation: late 0.8s linear alternate infinite;
+    .body {
+        position: absolute;
+        left: 30px;
+        height: 186px;
+        width: 135px;
+        background: url(../img/a_3.png) no-repeat;
+    }
+    .Lhand {
+        position: absolute;
+        left: 0px;
+        top: 80px;
+        height: 55px;
+        width: 38px;
+        background: url(../img/a_3.png) no-repeat;
+        background-position: -141px 0;
+        transform-origin: right top;
+        animation: heads 0.8s linear alternate infinite;
+    }
+    .Rhand {
+        position: absolute;
+        left: 160px;
+        top: 20px;
+        height: 90px;
+        width: 49px;
+        background: url(../img/a_3.png) no-repeat;
+        background-position: -143px -55px;
+        transform-origin: left bottom;
+        animation: heads 0.8s linear alternate infinite;
+    }
+    .Lfoot {
+        position: absolute;
+        left: 25px;
+        top: 170px;
+        height: 15px;
+        width: 61px;
+        background: url(../img/a_3.png) no-repeat;
+        background-position: -140px -150px;
+        transform-origin: right top;
+        animation: Lfoots 0.8s linear alternate infinite;
+    }
+    .Rfoot {
+        position: absolute;
+        left: 105px;
+        top: 170px;
+        height: 15px;
+        width: 61px;
+        background: url(../img/a_3.png) no-repeat;
+        background-position: -140px -168px;
+        transform-origin: left top;
+        animation: Rfoots 0.8s linear alternate infinite;
+    }
+}
+
+@keyframes late {
+    from {
+        transform: translateY(0)
+    }
+    to {
+        transform: translateY(-20%)
+    }
+}
+
+@keyframes heads {
+    from {
+        transform: rotate(-10deg)
+    }
+    to {
+        transform: rotate(10deg)
+    }
+}
+
+@keyframes Lfoots {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(-10deg)
+    }
+}
+
+@keyframes Rfoots {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(10deg)
+    }
+}
